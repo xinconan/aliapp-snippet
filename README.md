@@ -52,12 +52,12 @@ my.showLoading({
 - [x] 代扣签约
 - [ ] 跳转支付宝卡包
 - [ ] 会员开卡授权
-- [ ] 芝麻认证
+- [x] 芝麻认证
 - [ ] 信用借还
 - [ ] 文本风险识别
 - [ ] 小程序跳转
 - [ ] 图片
-- [ ] 缓存
+- [x] 缓存
 - [ ] 文件
 - [ ] 位置
 - [ ] 网络
@@ -70,9 +70,10 @@ my.showLoading({
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.2
+增加缓存、芝麻认证API
 
-### 1.0.0
+### 0.0.1
 
 Initial release
 

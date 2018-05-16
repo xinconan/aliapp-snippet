@@ -226,6 +226,130 @@
     ],
     "description": "支付代扣签约"
   },
+  "my.startZMVerify": {
+    "prefix": "my.zm",
+    "body": [
+      "my.startZMVerify({",
+      "\tbizNo: '$2',",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "芝麻认证"
+  },
+  "my.setStorage": {
+    "prefix": "my.ss",
+    "body": [
+      "my.setStorage({",
+      "\tkey: '$3',",
+      "\tdata: {",
+      "\t\t$2",
+      "\t},",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "缓存"
+  },
+  "my.setStorageSync": {
+    "prefix": "my.sss",
+    "body": [
+      "my.setStorageSync({",
+      "\tkey: '$1',",
+      "\tdata: {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "同步缓存"
+  },
+  "my.getStorage": {
+    "prefix": "my.gs",
+    "body": [
+      "my.getStorage({",
+      "\tkey: '$2',",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "获取缓存数据"
+  },
+  "my.getStorageSync": {
+    "prefix": "my.gss",
+    "body": [
+      "my.getStorageSync({ key: $0 })"
+    ],
+    "description": "同步获取缓存数据"
+  },
+  "my.removeStorage": {
+    "prefix": "my.rms",
+    "body": [
+      "my.removeStorage({",
+      "\tkey: '$2',",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "删除缓存数据"
+  },
+  "my.removeStorageSync": {
+    "prefix": "my.rmss",
+    "body": [
+      "my.removeStorageSync({ key: $0 })"
+    ],
+    "description": "同步删除缓存数据"
+  },
+  "my.clearStorage": {
+    "prefix": "my.cs",
+    "body": [
+      "my.clearStorage()"
+    ],
+    "description": "清除本地数据缓存"
+  },
+  "my.clearStorageSync": {
+    "prefix": "my.css",
+    "body": [
+      "my.clearStorageSync()"
+    ],
+    "description": "同步清除本地数据缓存"
+  },
+  "my.getStorageInfo": {
+    "prefix": "my.gsi",
+    "body": [
+      "my.getStorageInfo({",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "异步获取当前storage的相关信息"
+  },
+  "my.getStorageInfoSync": {
+    "prefix": "my.gsis",
+    "body": [
+      "my.getStorageInfoSync()"
+    ],
+    "description": "同步获取当前storage的相关信息"
+  },
   "my.getAuthCode": {
     "prefix": "my.gac",
     "body": [
