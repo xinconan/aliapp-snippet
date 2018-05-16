@@ -1,7 +1,9 @@
 # aliapp-snippet
 
-为VSCode提供`支付宝小程序`API语法支持及代码片段。
+为VSCode提供[支付宝小程序](https://docs.alipay.com/mini/developer/getting-started) API语法支持及代码片段。
 
+![](https://vsmarketplacebadge.apphb.com/version/xinconan.aliapp-snippet.svg)
+![](https://vsmarketplacebadge.apphb.com/installs/xinconan.aliapp-snippet.svg)
 ## 安装
 1. 在VSCode中，打开扩展（`Ctrl + Shift + X`），搜索 `aliapp-snippet`。
 2. 点击 `install/安装`。
