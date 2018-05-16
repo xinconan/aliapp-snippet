@@ -1,0 +1,322 @@
+{
+  "my.alert": {
+    "prefix": "my.a",
+    "body": [
+      "my.alert({",
+      "\ttitle: '',",
+      "\tcontent: '',",
+      "\tbuttonText: '确定',",
+      "\tsuccess: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "alert警告框"
+  },
+  "my.confirm": {
+    "prefix": "my.co",
+    "body": [
+      "my.confirm({",
+      "\ttitle: '',",
+      "\tcontent: '',",
+      "\tconfirmButtonText: '确定',",
+      "\tcancelButtonText: '取消',",
+      "\tsuccess: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "confirm 确认框"
+  },
+  "my.navigateTo": {
+    "prefix": "my.nav",
+    "body": [
+      "my.navigateTo({",
+      "\turl: '$0',",
+      "})"
+    ],
+    "description": "跳转至某个指定页面"
+  },
+  "my.redirectTo": {
+    "prefix": "my.red",
+    "body": [
+      "my.redirectTo({",
+      "\turl: '$0',",
+      "})"
+    ],
+    "description": "重定向至某个指定页面"
+  },
+  "my.navigateBack": {
+    "prefix": "my.navb",
+    "body": [
+      "my.navigateBack({",
+      "\tdelta: '1',",
+      "})"
+    ],
+    "description": "关闭当前页面，返回上一级或多级页面"
+  },
+  "my.reLaunch": {
+    "prefix": "my.reL",
+    "body": [
+      "my.reLaunch({",
+      "\turl: '$0',",
+      "})"
+    ],
+    "description": "关闭当前所有页面，跳转到应用内的某个指定页面"
+  },
+  "my.switchTab": {
+    "prefix": "my.swt",
+    "body": [
+      "my.switchTab({",
+      "\turl: '$0',",
+      "})"
+    ],
+    "description": "跳转到指定 tabBar 页面"
+  },
+  "my.setNavigationBar": {
+    "prefix": "my.snb",
+    "body": [
+      "my.setNavigationBar({",
+      "\ttitle: '$0',",
+      "\tbackgroundColor: '',",
+      "})"
+    ],
+    "description": "设置导航栏文字及样式"
+  },
+  "my.showActionSheet": {
+    "prefix": "my.sas",
+    "body": [
+      "my.showActionSheet({",
+      "\ttitle: '',",
+      "\titems: [$1],",
+      "\tcancelButtonText: '取消',",
+      "\tdestructiveBtnIndex: 0,",
+      "\tsuccess: (res) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "显示操作菜单"
+  },
+  "my.showToast": {
+    "prefix": "my.st",
+    "body": [
+      "my.showToast({",
+      "\ttype: 'none',",
+      "\tcontent: '$0',",
+      "\tduration: 3000,",
+      "})"
+    ],
+    "description": "toast提示"
+  },
+  "my.showLoading": {
+    "prefix": "my.sl",
+    "body": [
+      "my.showLoading({",
+      "\tcontent: '$0',",
+      "\tdelay: 0,",
+      "})"
+    ],
+    "description": "显示加载提示"
+  },
+  "my.hideToast": {
+    "prefix": "my.ht",
+    "body": [
+      "my.hideToast()"
+    ],
+    "description": "隐藏toast提示"
+  },
+  "my.hideLoading": {
+    "prefix": "my.hl",
+    "body": [
+      "my.hideLoading()"
+    ],
+    "description": "隐藏加载提示"
+  },
+  "my.hideKeyboard": {
+    "prefix": "my.hdb",
+    "body": [
+      "my.hideKeyboard()"
+    ],
+    "description": "隐藏键盘"
+  },
+  "my.pageScrollTo": {
+    "prefix": "my.pgst",
+    "body": [
+      "my.pageScrollTo({",
+      "\tscrollTop: 100$0,",
+      "})"
+    ],
+    "description": "滚动到页面的目标位置"
+  },
+  "onPullDownRefresh": {
+    "prefix": "opr",
+    "body": [
+      "onPullDownRefresh() {",
+      "\t$0",
+      "},"
+    ],
+    "description": "下拉刷新"
+  },
+  "my.stopPullDownRefresh": {
+    "prefix": "my.spr",
+    "body": [
+      "my.stopPullDownRefresh()"
+    ],
+    "description": "停止当前页面的下拉刷新"
+  },
+  "my.showNavigationBarLoading": {
+    "prefix": "my.snl",
+    "body": [
+      "my.showNavigationBarLoading()"
+    ],
+    "description": "显示导航栏 loading"
+  },
+  "my.hideNavigationBarLoading": {
+    "prefix": "my.hnl",
+    "body": [
+      "my.hideNavigationBarLoading()"
+    ],
+    "description": "隐藏导航栏 loading"
+  },
+  "my.chooseCity": {
+    "prefix": "my.ch",
+    "body": [
+      "my.chooseCity({",
+      "\tshowLocatedCity: false,",
+      "\tshowHotCities: true,",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "选择城市"
+  },
+  "my.tradePay": {
+    "prefix": "my.tp",
+    "body": [
+      "my.tradePay({",
+      "\torderStr: '$2', // App支付使用",
+      "\ttradeNO: '', // 当面付使用",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "唤起支付"
+  },
+  "my.paySignCenter": {
+    "prefix": "my.psc",
+    "body": [
+      "my.paySignCenter({",
+      "\tsignStr: '$2', // 签约字符串",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "支付代扣签约"
+  },
+  "my.getAuthCode": {
+    "prefix": "my.gac",
+    "body": [
+      "my.getAuthCode({",
+      "\tscopes: 'auth_base',",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "获取授权码"
+  },
+  "my.getAuthUserInfo": {
+    "prefix": "my.gui",
+    "body": [
+      "my.getAuthUserInfo({",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "获取会员信息"
+  },
+  "my.datePicker": {
+    "prefix": "my.dp",
+    "body": [
+      "my.datePicker({",
+      "\tformat: 'yyyy-MM-dd',",
+      "\tcurrentDate: '',",
+      "\tstartDate: '',",
+      "\tendDate: '',",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "选择日期"
+  },
+  "my.choosePhoneContact": {
+    "prefix": "my.chpc",
+    "body": [
+      "my.choosePhoneContact({",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "选择系统通信录中某个联系人的电话"
+  },
+  "my.chooseAlipayContact": {
+    "prefix": "my.chac",
+    "body": [
+      "my.chooseAlipayContact({",
+      "\tcount: 1, // 单次最多选择联系人个数，默认 1，最大 10",
+      "\tsuccess: (contacts) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "选择一个或者多个支付宝联系人"
+  },
+  "my.chooseContact": {
+    "prefix": "my.chc",
+    "body": [
+      "my.chooseContact({",
+      "\tchooseType: 'single',",
+      "\tincludeMobileContactMode: 'known',",
+      "\tincludeMe: false,",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "唤起选人组件"
+  }
+}
