@@ -3,9 +3,14 @@
     "displayName": "aliapp-snippet",
     "description": "Simple snippets for alipay miniapp",
     "version": "0.0.1",
+    "icon": "images/logo.png",
     "publisher": "xinconan",
     "engines": {
         "vscode": "^1.10.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xinconan/aliapp-snippet.git"
     },
     "categories": [
         "Snippets"
