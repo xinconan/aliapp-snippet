@@ -350,6 +350,111 @@
     ],
     "description": "同步获取当前storage的相关信息"
   },
+  "my.httpRequest": {
+    "prefix": "my.http",
+    "body": [
+      "my.httpRequest({",
+      "\turl: '$2',",
+      "\theaders: {},",
+      "\tdata: {},",
+      "\tdataType: 'json',",
+      "\tmethod: 'GET',",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "\tcomplete: (res) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "http 请求"
+  },
+  "my.uploadFile": {
+    "prefix": "my.up",
+    "body": [
+      "my.uploadFile({",
+      "\turl: '$2',",
+      "\tfilePath: '',",
+      "\tfileName: '',",
+      "\tfileType: 'image',",
+      "\theader: {},",
+      "\tformData: {},",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "上传文件"
+  },
+  "my.connectSocket": {
+    "prefix": "my.cos",
+    "body": [
+      "my.connectSocket({",
+      "\turl: '$2',",
+      "\theader: {},",
+      "\tdata: {},",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "创建 WebSocket 连接"
+  },
+  "my.downloadFile": {
+    "prefix": "my.dl",
+    "body": [
+      "my.downloadFile({",
+      "\turl: '$2',",
+      "\theader: {},",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "下载文件"
+  },
+  "my.onSocketOpen": {
+    "prefix": "my.onso",
+    "body": [
+      "my.onSocketOpen({",
+      "\turl: '$2',",
+      "\theader: {},",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "下载文件"
+  },
+  "my.getServerTime": {
+    "prefix": "my.gst",
+    "body": [
+      "my.getServerTime({",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "获取当前服务器时间的毫秒数"
+  },
   "my.getAuthCode": {
     "prefix": "my.gac",
     "body": [
