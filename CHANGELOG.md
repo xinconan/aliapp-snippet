@@ -2,6 +2,10 @@
 All notable changes to the "aliapp-snippet" extension will be documented in this file.
 
 
+## [0.0.4]
+### Added
+- 增加 `axml` 代码片段的支持
+
 ## [0.0.3]
 ### Added
 - 网络

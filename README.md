@@ -4,6 +4,9 @@
 
 ![](https://vsmarketplacebadge.apphb.com/version/xinconan.aliapp-snippet.svg)
 ![](https://vsmarketplacebadge.apphb.com/installs/xinconan.aliapp-snippet.svg)
+
+> 2018-05-18 update：增加了 `axml` 的支持，直接使用支付宝开发者工具内置的扩展，并在其基础上增加了`template` 和 `block` 扩展。
+
 ## 安装
 1. 在VSCode中，打开扩展（`Ctrl + Shift + X`），搜索 `aliapp-snippet`。
 2. 点击 `install/安装`。

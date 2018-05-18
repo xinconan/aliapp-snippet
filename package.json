@@ -2,7 +2,7 @@
     "name": "aliapp-snippet",
     "displayName": "aliapp-snippet",
     "description": "Simple snippets for alipay miniapp",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "icon": "images/logo.png",
     "publisher": "xinconan",
     "engines": {
@@ -12,6 +12,13 @@
         "type": "git",
         "url": "https://github.com/xinconan/aliapp-snippet.git"
     },
+    "keywords": [
+        "aliapp",
+        "alipay",
+        "支付宝",
+        "snippet",
+        "miniapp"
+    ],
     "categories": [
         "Snippets"
     ],
@@ -19,10 +26,34 @@
         "url": "https://github.com/xinconan/aliapp-snippet/issues"
     },
     "contributes": {
+        "languages": [
+            {
+                "id": "axml",
+                "aliases": [
+                    "axml",
+                    "AXML"
+                ],
+                "extensions": [
+                    ".axml"
+                ],
+                "configuration": "./language.configure.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "axml",
+                "scopeName": "text.html.axml",
+                "path": "./syntaxes/axml.tmLanguage"
+            }
+        ],
         "snippets": [
             {
                 "language": "javascript",
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "axml",
+                "path": "./snippets/axml.json"
             }
         ]
     }
