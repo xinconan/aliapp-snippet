@@ -32,7 +32,7 @@ my.showLoading({
 ```
 - more...
 
-## TODO
+## TODO List
 - [x] 导航栏
 - [x] TabBar
 - [x] 交互反馈
@@ -60,23 +60,16 @@ my.showLoading({
 - [x] 缓存
 - [ ] 文件
 - [ ] 位置
-- [ ] 网络
-- [ ] 设备
+- [x] 网络
+- [x] 设备
 - [ ] 扫码
 - [ ] 蓝牙
 - [ ] 数据安全(rsa)
 - [ ] 分享
 - [ ] 自定义分析
 
-## Release Notes
-
-### 0.0.2
-增加缓存、芝麻认证API
-
-### 0.0.1
-
-Initial release
-
+## License
+MIT
 
 -----------------------------------------
 **Enjoy!**
