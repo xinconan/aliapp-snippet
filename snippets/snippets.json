@@ -425,12 +425,11 @@
     ],
     "description": "下载文件"
   },
-  "my.onSocketOpen": {
-    "prefix": "my.onso",
+  "my.sendSocketMessage": {
+    "prefix": "my.ssm",
     "body": [
-      "my.onSocketOpen({",
-      "\turl: '$2',",
-      "\theader: {},",
+      "my.sendSocketMessage({",
+      "\tdata: '$2',",
       "\tsuccess: (res) => {",
       "\t\t$1",
       "\t},",
@@ -439,7 +438,147 @@
       "\t},",
       "})"
     ],
-    "description": "下载文件"
+    "description": "发送WebSocket数据"
+  },
+  "my.onSocketMessage": {
+    "prefix": "my.onsm",
+    "body": [
+      "my.onSocketMessage((res)=>{",
+      "\t$0",
+      "})"
+    ],
+    "description": "监听WebSocket接受消息事件"
+  },
+  "my.offSocketMessage": {
+    "prefix": "my.offsm",
+    "body": [
+      "my.offSocketMessage()"
+    ],
+    "description": "取消监听WebSocket接收消息事件"
+  },
+  "my.closeSocket": {
+    "prefix": "my.cst",
+    "body": [
+      "my.closeSocket()"
+    ],
+    "description": "关闭WebSocket连接"
+  },
+  "my.onSocketClose": {
+    "prefix": "my.onsc",
+    "body": [
+      "my.onSocketClose((res)=>{",
+      "\t$0",
+      "})"
+    ],
+    "description": "监听WebSocket关闭"
+  },
+  "my.offSocketClose": {
+    "prefix": "my.offsc",
+    "body": [
+      "my.offSocketClose()"
+    ],
+    "description": "取消监听WebSocket关闭"
+  },
+  "my.onSocketOpen": {
+    "prefix": "my.onso",
+    "body": [
+      "my.onSocketOpen((res)=>{",
+      "\t$0",
+      "})"
+    ],
+    "description": "监听WebSocket连接打开事件"
+  },
+  "my.offSocketOpen": {
+    "prefix": "my.offso",
+    "body": [
+      "my.offSocketOpen($0)"
+    ],
+    "description": "取消监听WebSocket连接打开事件"
+  },
+  "my.onSocketError": {
+    "prefix": "my.onse",
+    "body": [
+      "my.onSocketError((res)=>{",
+      "\t$0",
+      "})"
+    ],
+    "description": "监听WebSocket错误"
+  },
+  "my.offSocketError": {
+    "prefix": "my.offse",
+    "body": [
+      "my.offSocketError($0)"
+    ],
+    "description": "取消监听WebSocket错误"
+  },
+  "my.setKeepScreenOn": {
+    "prefix": "my.sks",
+    "body": [
+      "my.setKeepScreenOn({",
+      "\tkeepScreenOn: true,",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "设置是否保持屏幕长亮状态"
+  },
+  "my.setScreenBrightness": {
+    "prefix": "my.ssb",
+    "body": [
+      "my.setScreenBrightness({",
+      "\tbrightness: 0.5, // 0-1",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "设置屏幕亮度"
+  },
+  "my.getScreenBrightness": {
+    "prefix": "my.gsb",
+    "body": [
+      "my.getScreenBrightness({",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "获取屏幕亮度"
+  },
+  "my.onUserCaptureScreen": {
+    "prefix": "my.onuc",
+    "body": [
+      "my.onUserCaptureScreen(()=>{",
+      "\t$0",
+      "})"
+    ],
+    "description": "监听用户截屏事件"
+  },
+  "my.offUserCaptureScreen": {
+    "prefix": "my.offuc",
+    "body": [
+      "my.offUserCaptureScreen()"
+    ],
+    "description": "取消监听用户截屏事件"
+  },
+  "my.showAuthGuide": {
+    "prefix": "my.sag",
+    "body": [
+      "my.showAuthGuide({",
+      "\tauthType: '$0'",
+      "})"
+    ],
+    "description": "权限引导"
   },
   "my.getServerTime": {
     "prefix": "my.gst",
@@ -454,6 +593,129 @@
       "})"
     ],
     "description": "获取当前服务器时间的毫秒数"
+  },
+  "my.getNetworkType": {
+    "prefix": "my.gnt",
+    "body": [
+      "my.getNetworkType({",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "获取当前网络状态"
+  },
+  "my.onNetworkStatusChange": {
+    "prefix": "my.onnet",
+    "body": [
+      "my.onNetworkStatusChange((res) => {",
+      "\t$0",
+      "})"
+    ],
+    "description": "监听网络状态的变化"
+  },
+  "my.offNetworkStatusChange": {
+    "prefix": "my.offnet",
+    "body": [
+      "my.offNetworkStatusChange()"
+    ],
+    "description": "取消网络状态变化的监听"
+  },
+  "my.getClipboard": {
+    "prefix": "my.gcb",
+    "body": [
+      "my.getClipboard({",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "获取剪贴板数据"
+  },
+  "my.setClipboard": {
+    "prefix": "my.scb",
+    "body": [
+      "my.setClipboard({",
+      "\ttext: '$2',",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "设置剪贴板数据"
+  },
+  "my.watchShake": {
+    "prefix": "my.wh",
+    "body": [
+      "my.watchShake({",
+      "\tsuccess: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "摇一摇"
+  },
+  "my.vibrate": {
+    "prefix": "my.v",
+    "body": [
+      "my.vibrate({",
+      "\tsuccess: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "震动"
+  },
+  "my.makePhoneCall": {
+    "prefix": "my.mpc",
+    "body": [
+      "my.makePhoneCall({ number: '$0' })"
+    ],
+    "description": "拨打电话"
+  },
+  "my.getSystemInfo": {
+    "prefix": "my.gsy",
+    "body": [
+      "my.getSystemInfo({",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: () => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "获取系统信息"
+  },
+  "my.getSystemInfoSync": {
+    "prefix": "my.gsys",
+    "body": [
+      "my.getSystemInfoSync()"
+    ],
+    "description": "同步获取系统信息"
+  },
+  "my.SDKVersion": {
+    "prefix": "my.sdk",
+    "body": [
+      "my.SDKVersion"
+    ],
+    "description": "获取基础库版本号"
+  },
+  "my.canIUse": {
+    "prefix": "my.can",
+    "body": [
+      "my.canIUse('$0')"
+    ],
+    "description": "canIUse"
   },
   "my.getAuthCode": {
     "prefix": "my.gac",
