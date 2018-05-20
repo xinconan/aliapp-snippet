@@ -1,6 +1,8 @@
 # Change Log
 All notable changes to the "aliapp-snippet" extension will be documented in this file.
 
+## [unreleased]
+- 文本风险识别
 
 ## [0.0.4]
 ### Added

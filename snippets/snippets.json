@@ -241,6 +241,22 @@
     ],
     "description": "芝麻认证"
   },
+  "my.textRiskIdentification": {
+    "prefix": "my.tri",
+    "body": [
+      "my.textRiskIdentification({",
+      "\tcontent: '$2',",
+      "\ttype: ['keyword', '0', '1', '2', '3'],",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "文本风险识别"
+  },
   "my.setStorage": {
     "prefix": "my.ss",
     "body": [
