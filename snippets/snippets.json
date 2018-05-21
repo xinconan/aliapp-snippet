@@ -257,6 +257,85 @@
     ],
     "description": "文本风险识别"
   },
+  "my.chooseImage": {
+    "prefix": "my.ci",
+    "body": [
+      "my.chooseImage({",
+      "\tcount: 1,",
+      "\tsourceType: ['camera','album'],",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "拍照或从手机相册中选择图片"
+  },
+  "my.previewImage": {
+    "prefix": "my.pi",
+    "body": [
+      "my.previewImage({",
+      "\tcurrent: 0,",
+      "\turls: [],",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "预览图片"
+  },
+  "my.saveImage": {
+    "prefix": "my.si",
+    "body": [
+      "my.saveImage({",
+      "\turl: '$2',",
+      "\tshowActionSheet: true,",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "保存图片"
+  },
+  "my.compressImage": {
+    "prefix": "my.coi",
+    "body": [
+      "my.compressImage({",
+      "\tapFilePaths: [$2],",
+      "\tcompressLevel: 4,",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "压缩图片"
+  },
+  "my.getImageInfo": {
+    "prefix": "my.gii",
+    "body": [
+      "my.getImageInfo({",
+      "\tsrc: '$2',",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "获取图片信息"
+  },
   "my.navigateToMiniProgram": {
     "prefix": "my.ntmp",
     "body": [

@@ -4,6 +4,7 @@ All notable changes to the "aliapp-snippet" extension will be documented in this
 ## [unreleased]
 - 文本风险识别
 - 小程序跳转
+- 图片
 
 ## [0.0.4]
 ### Added
