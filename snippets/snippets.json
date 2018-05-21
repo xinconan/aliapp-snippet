@@ -257,6 +257,38 @@
     ],
     "description": "文本风险识别"
   },
+  "my.navigateToMiniProgram": {
+    "prefix": "my.ntmp",
+    "body": [
+      "my.navigateToMiniProgram({",
+      "\tappId: '$2',",
+      "\tpath: '',",
+      "\textraData: {},",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "跳转到同主体小程序"
+  },
+  "my.navigateBackMiniProgram": {
+    "prefix": "my.nbmp",
+    "body": [
+      "my.navigateBackMiniProgram({",
+      "\textraData: {},",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "跳转回上一个小程序"
+  },
   "my.setStorage": {
     "prefix": "my.ss",
     "body": [
