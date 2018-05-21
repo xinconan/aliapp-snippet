@@ -14,6 +14,7 @@ All notable changes to the "aliapp-snippet" extension will be documented in this
 ### Added
 - 网络
 - 设备
+- 位置
 
 ## [0.0.2]
 ### Added

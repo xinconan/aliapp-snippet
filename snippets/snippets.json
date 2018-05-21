@@ -336,6 +336,54 @@
     ],
     "description": "获取图片信息"
   },
+  "my.getLocation": {
+    "prefix": "my.gl",
+    "body": [
+      "my.getLocation({",
+      "\tcacheTimeout: 60,",
+      "\ttype: 0,",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "获取用户当前的地理位置信息"
+  },
+  "my.openLocation": {
+    "prefix": "my.ol",
+    "body": [
+      "my.openLocation({",
+      "\tlongitude: '',",
+      "\tlatitude: '',",
+      "\tname: '',",
+      "\taddress: '',",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "使用支付宝内置地图查看位置"
+  },
+  "my.chooseLocation": {
+    "prefix": "my.chl",
+    "body": [
+      "my.chooseLocation({",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "使用支付宝内置地图选择位置"
+  },
   "my.navigateToMiniProgram": {
     "prefix": "my.ntmp",
     "body": [
