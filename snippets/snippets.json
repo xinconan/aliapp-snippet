@@ -984,5 +984,36 @@
       "})"
     ],
     "description": "唤起选人组件"
+  },
+  "my.reportAnalytics": {
+    "prefix": "my.rea",
+    "body": [
+      "my.reportAnalytics('${0:eventName}', {",
+      "\tstatus: 200",
+      "})"
+    ],
+    "description": "自定义分析"
+  },
+  "my.hideShareMenu": {
+    "prefix": "my.hsm",
+    "body": [
+      "my.hideShareMenu()"
+    ],
+    "description": "隐藏分享按钮"
+  },
+  "onShareAppMessage": {
+    "prefix": "osam",
+    "body": [
+      "onShareAppMessage() {",
+      "\treturn {",
+      "\t\ttitle: '$1',",
+      "\t\tdesc: '',",
+      "\t\tpath: '$0',",
+      "\t\tcontent: '',",
+      "\t\timageUrl: '',",
+      "\t};",
+      "},"
+    ],
+    "description": "分享"
   }
 }
