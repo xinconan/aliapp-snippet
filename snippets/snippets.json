@@ -985,6 +985,38 @@
     ],
     "description": "唤起选人组件"
   },
+  "my.scan": {
+    "prefix": "my.sc",
+    "body": [
+      "my.scan({",
+      "\ttype: 'qr',  // qr or bar ",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "扫码"
+  },
+  "my.rsa": {
+    "prefix": "my.rsa",
+    "body": [
+      "my.rsa({",
+      "\taction: 'encrypy', // encrypy加密，decrypt解密",
+      "\ttext: '${2:encrypyText}',",
+      "\tkey: '',",
+      "\tsuccess: (res) => {",
+      "\t\t$1",
+      "\t},",
+      "\tfail: (err) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "rsa加解密"
+  },
   "my.reportAnalytics": {
     "prefix": "my.rea",
     "body": [

@@ -2,7 +2,8 @@
 All notable changes to the "aliapp-snippet" extension will be documented in this file.
 
 ## [unreleased]
-
+- 扫码
+- 数据安全
 
 ## [0.0.5]
 - 文本风险识别
