@@ -985,6 +985,90 @@
     ],
     "description": "唤起选人组件"
   },
+  "my.openCardList": {
+    "prefix": "my.ocl",
+    "body": [
+      "my.openCardList()"
+    ],
+    "description": "打开支付宝卡列表"
+  },
+  "my.openVoucherList": {
+    "prefix": "my.ovl",
+    "body": [
+      "my.openVoucherList()"
+    ],
+    "description": "打开支付宝券列表"
+  },
+  "my.openTicketList": {
+    "prefix": "my.otl",
+    "body": [
+      "my.openTicketList()"
+    ],
+    "description": "打开支付宝票列表"
+  },
+  "my.openMerchantCardList": {
+    "prefix": "my.omcl",
+    "body": [
+      "my.openMerchantCardList({",
+      "\tpartnerId: '$0',",
+      "})"
+    ],
+    "description": "打开某个商户的卡列表"
+  },
+  "my.openMerchantVoucherList": {
+    "prefix": "my.omvl",
+    "body": [
+      "my.openMerchantVoucherList({",
+      "\tpartnerId: '$0',",
+      "})"
+    ],
+    "description": "打开某个商户的券列表"
+  },
+  "my.openMerchantTicketList": {
+    "prefix": "my.omtl",
+    "body": [
+      "my.openMerchantTicketList({",
+      "\tpartnerId: '$0',",
+      "})"
+    ],
+    "description": "打开某个商户的票列表"
+  },
+  "my.openCardDetail": {
+    "prefix": "my.ocd",
+    "body": [
+      "my.openCardDetail({",
+      "\tpassId: '$0',",
+      "})"
+    ],
+    "description": "打开用户的某张卡的详情页"
+  },
+  "my.openVoucherDetail": {
+    "prefix": "my.ovd",
+    "body": [
+      "my.openVoucherDetail({",
+      "\tpassId: '$0',",
+      "})"
+    ],
+    "description": "打开用户的某张券的详情页（非口碑）"
+  },
+  "my.openKBVoucherDetail": {
+    "prefix": "my.okvd",
+    "body": [
+      "my.openKBVoucherDetail({",
+      "\tpassId: '$0',",
+      "})"
+    ],
+    "description": "打开用户的某张券的详情页（口碑）"
+  },
+  "my.openTicketDetail": {
+    "prefix": "my.otd",
+    "body": [
+      "my.openTicketDetail({",
+      "\tpassId: '$0',",
+      "})"
+    ],
+    "description": "打开用户的某张票的详情页"
+  },
   "my.scan": {
     "prefix": "my.sc",
     "body": [
