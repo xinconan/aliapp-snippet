@@ -21,12 +21,28 @@
       "\tcontent: '',",
       "\tconfirmButtonText: '确定',",
       "\tcancelButtonText: '取消',",
-      "\tsuccess: () => {",
+      "\tsuccess: (res) => {",
       "\t\t$0",
       "\t},",
       "})"
     ],
     "description": "confirm 确认框"
+  },
+  "my.prompt": {
+    "prefix": "my.pro",
+    "body": [
+      "my.prompt({",
+      "\ttitle: '',",
+      "\tmessage: '',",
+      "\tplaceholder: '',",
+      "\tokButtonText: '确定',",
+      "\tcancelButtonText: '取消',",
+      "\tsuccess: (res) => {",
+      "\t\t$0",
+      "\t},",
+      "})"
+    ],
+    "description": "promote 输入框"
   },
   "my.navigateTo": {
     "prefix": "my.nav",

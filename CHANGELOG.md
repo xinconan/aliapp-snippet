@@ -2,9 +2,12 @@
 All notable changes to the "aliapp-snippet" extension will be documented in this file.
 
 ## [unreleased]
+
+## [0.0.6]
 - 扫码
 - 数据安全
 - 跳转支付宝卡包
+- 同步增加 `prompt` API
 
 ## [0.0.5]
 - 文本风险识别
