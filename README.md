@@ -4,6 +4,7 @@
 
 ![](https://vsmarketplacebadge.apphb.com/version/xinconan.aliapp-snippet.svg)
 ![](https://vsmarketplacebadge.apphb.com/installs/xinconan.aliapp-snippet.svg)
+[![License](https://img.shields.io/github/license/xinconan/aliapp-snippet.svg)](LICENSE)
 
 > 2018-05-18 update：增加了 `axml` 的支持，直接使用支付宝开发者工具内置的扩展，并在其基础上增加了`template` 和 `block` 扩展。
 
