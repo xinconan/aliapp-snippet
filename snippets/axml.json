@@ -22,7 +22,7 @@
   },
   "view": {
     "prefix": "view",
-    "body": "<view>$2</view>$3",
+    "body": "<view class=\"${1:class}\">$2</view>$3",
     "description": "视图容器"
   },
   "scroll-view": {
@@ -158,8 +158,18 @@
   },
   "a:for": {
     "prefix": "afor",
-    "body": "a:for=\"{{item in ${1:items}}}\"",
+    "body": "a:for=\"{{${1:items}}}\"",
     "description": "列表渲染"
+  },
+  "a:for-item": {
+    "prefix": "afit",
+    "body": "a:for=\"{{${1:item}}}\"",
+    "description": "列表渲染item"
+  },
+  "a:for-index": {
+    "prefix": "afid",
+    "body": "a:for-index=\"{{${1:index}}}\"",
+    "description": "列表渲染index"
   },
   "a:if": {
     "prefix": "aif",
