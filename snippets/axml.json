@@ -173,12 +173,12 @@
   },
   "a:if": {
     "prefix": "aif",
-    "body": "a:if=\"{{condition}}\"",
+    "body": "a:if=\"{{${1:condition}}}\"",
     "description": "条件渲染if"
   },
   "a:elif": {
     "prefix": "aelif",
-    "body": "a:elif=\"{{condition}}\"",
+    "body": "a:elif=\"{{${1:condition}}}\"",
     "description": "条件渲染else if"
   },
   "onTap": {
